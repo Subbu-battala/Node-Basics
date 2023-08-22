@@ -1,8 +1,10 @@
 const http = require('http')
 
-const port = 5001// 4 digits port is IPv4, and 6 digits port is IPv6
+const port = 5200// 4 digits port is IPv4, and 6 digits port is IPv6
 
-const server = http.createServer(function (req, res) {
+const server = http.createServer()
+
+ server.on('request',function (req, res) {
     //req.url => to fead the path from the browser tht is url
 
     switch(req.url) {

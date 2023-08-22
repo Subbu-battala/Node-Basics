@@ -18,4 +18,4 @@ const currOs = {
     avgLoad: os.loadavg()
 }
 
-console.log('current 0s =', currOs)
+console.log('current os =', currOs)
